@@ -15,3 +15,5 @@ ASP.NET Core MVC
 Entity Framework Core
 Bootstrap 5
 Microsoft SQL Server
+
+Note: This project is still a work in progress. More features and improvements are coming soon!
