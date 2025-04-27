@@ -1,0 +1,148 @@
+﻿@model GamingStore.Models.UserProfileModel
+@{
+    ViewData["Title"] = "My Profile";
+}
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<div class="container mt-5 mb-5">
+    <div class="card shadow-lg border-0 rounded-lg bg-dark">
+        <div class="card-body">
+            <h2 class="text-light text-center mb-3">Welcome, @Model.FullName!</h2>
+            <div class="mb-4">
+                <h5 class="text-light mb-3">Profile Information</h5>
+                <div class="row">
+                    <div class="col-12 col-md-12 mb-3">
+                        <div class="profile-card p-3 bg-dark border border-transparent rounded text-light">
+                            <strong>Full Name</strong>
+                            <p>@Model.FullName</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 mb-3">
+                        <div class="profile-card p-3 bg-dark border border-transparent rounded text-light">
+                            <strong>Email</strong>
+                            <p>@Model.Email</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 mb-3">
+                        <div class="profile-card p-3 bg-dark border border-transparent rounded text-light">
+                            <strong>Role</strong>
+                            <p>@Model.Role</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <a href="/" class="btn profile-page-back-btn text-light rounded-pill px-5 py-3">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                <div>
+                    <a href="/Account/EditProfile" class="btn profile-page-btn text-light rounded-pill px-5 py-3 mr-2">Edit Profile</a>
+                    <button class="btn profile-page-btn text-light rounded-pill px-5 py-3" onclick="confirmDelete()">Delete Account</button>
+                </div>
+            </div>
+
+            <form id="deleteAccountForm" method="post" asp-action="DeleteAccount">
+                @Html.AntiForgeryToken()
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmDelete() {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "This action cannot be undone!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById("deleteAccountForm").submit();
+            }
+        });
+    }
+</script>
+
+<style>
+    .profile-card {
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+
+        .profile-card:hover {
+            border-color: rgba(139, 0, 0, 0.8) !important;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    .btn.profile-page-btn {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        background-color: rgba(139, 0, 0, 0.8);
+    }
+
+        .btn.profile-page-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+    .btn.profile-page-back-btn {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        background-color: #404040
+    }
+
+    .btn.profile-page-back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+    .btn-dark i {
+        margin-right: 10px;
+    }
+
+    .profile-card {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        padding: 1.5rem;
+        border: 1px solid transparent;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .profile-card strong {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-card p {
+            font-size: 1rem;
+            color: #d1d1d1;
+        }
+
+    .card {
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        background-color: rgba(139, 0, 0, 0.8);
+        color: white;
+        padding: 1rem;
+    }
+
+    .card-body {
+        background-color: #212121;
+        color: white;
+        padding: 2rem;
+    }
+</style>

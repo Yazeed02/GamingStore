@@ -1,2 +1,17 @@
-# GamingStore
-GamingStore is an ASP.NET Core MVC e-commerce web app for gaming products. It features advanced filtering, searching, sorting, discounts, and a modern dark-themed design. Built using .NET 8, Entity Framework Core, and Bootstrap 5.
+GamingStore
+
+GamingStore is a modern ASP.NET Core MVC web application for browsing and purchasing gaming products.
+It features live filtering, searching, sorting, discount handling, and a dark-themed responsive design.
+Built with .NET 8, Entity Framework Core, and Bootstrap 5.
+
+Features
+Product Search, Filter, Sort
+Dark mode, responsive design
+Sales, Discounts, and Stock Management
+Optimized for performance
+
+Tech Stack
+ASP.NET Core MVC
+Entity Framework Core
+Bootstrap 5
+Microsoft SQL Server

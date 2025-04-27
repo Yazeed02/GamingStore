@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ContactMessage>
+@{
+    ViewData["Title"] = "Contact Messages";
+
+    string currentSortBy = Context.Request.Query["sortBy"];
+    string currentSortOrder = Context.Request.Query["sortOrder"];
+    string Toggle(string sort) => (currentSortBy == sort && currentSortOrder == "asc") ? "desc" : "asc";
+}
+
+<div class="container mt-5 mb-5">
+    <h2 class="mb-4">Contact Messages</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No messages yet.</div>
+    }
+    else
+    {
+        <table class="table table-bordered table-hover bg-white shadow-sm">
+            <thead class="table-dark">
+                <tr>
+                    <th>
+                        <a asp-action="ContactMessages" asp-route-sortBy="Name" asp-route-sortOrder="@Toggle("Name")" class="text-white text-decoration-none">
+                            Name
+                        </a>
+                    </th>
+                    <th>Email</th>
+                    <th>
+                        <a asp-action="ContactMessages" asp-route-sortBy="Type" asp-route-sortOrder="@Toggle("Type")" class="text-white text-decoration-none">
+                            Type
+                        </a>
+                    </th>
+                    <th>Message</th>
+                    <th>
+                        <a asp-action="ContactMessages" asp-route-sortBy="Date" asp-route-sortOrder="@Toggle("Date")" class="text-white text-decoration-none">
+                            Date
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var msg in Model)
+                {
+                    <tr>
+                        <td>@msg.Name</td>
+                        <td>@msg.Email</td>
+                        <td>@msg.Type</td>
+                        <td>@msg.Message</td>
+                        <td>@msg.SubmittedAt.ToString("g")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

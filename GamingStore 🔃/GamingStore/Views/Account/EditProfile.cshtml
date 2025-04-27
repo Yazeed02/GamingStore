@@ -1,0 +1,113 @@
+﻿@model GamingStore.Models.EditProfileModel
+
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-lg bg-dark">
+        <div class="card-body">
+            <h2 class="text-light text-center mb-4">Edit Profile</h2>
+
+            <form method="post" asp-action="EditProfile">
+                <div class="form-group mb-4">
+                    <label for="FullName" class="text-light">Full Name</label>
+                    <input type="text" class="form-control bg-secondary text-light" id="FullName" name="FullName" value="@Model.FullName" required />
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="Email" class="text-light">Email</label>
+                    <input type="email" class="form-control bg-secondary text-light" id="Email" name="Email" value="@Model.Email" required />
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="CurrentPassword" class="text-light">Current Password</label>
+                    <input type="password" class="form-control bg-secondary text-light" id="CurrentPassword" name="CurrentPassword" required />
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="NewPassword" class="text-light">New Password</label>
+                    <input type="password" class="form-control bg-secondary text-light" id="NewPassword" name="NewPassword" required />
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <a href="/Account/Profile" class="btn profile-page-back-btn text-light rounded-pill px-5 py-3">
+                        <i class="fas fa-arrow-left"></i> Back to Profile
+                    </a>
+                    <button type="submit" class="btn profile-page-btn text-light rounded-pill px-5 py-3">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Display SweetAlert messages based on TempData
+    @if (TempData["AlertMessage"] != null)
+    {
+        <text>
+            Swal.fire({
+                icon: '@TempData["AlertType"]',
+                title: '@TempData["AlertMessage"]',
+                showConfirmButton: false,
+                timer: 3000
+            });
+        </text>
+    }
+</script>
+
+<style>
+    .btn.profile-page-btn {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        background-color: rgba(139, 0, 0, 0.8);
+    }
+
+        .btn.profile-page-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+    .btn.profile-page-back-btn {
+        width: auto;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        background-color: #404040
+    }
+
+        .btn.profile-page-back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+    .card {
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        background-color: #212121;
+        color: white;
+        padding: 2rem;
+    }
+
+    .form-control {
+        background-color: #404040;
+        border: 1px solid #404040;
+        color: white;
+    }
+
+        .form-control:focus {
+            background-color: #404040;
+            border-color: rgba(139, 0, 0, 0.8);
+            color: white;
+            box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.25);
+        }
+</style>

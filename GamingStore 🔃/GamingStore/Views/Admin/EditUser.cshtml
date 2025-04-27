@@ -1,0 +1,220 @@
+﻿@model GamingStore.Models.User
+
+@{
+    ViewData["Title"] = "Edit User";
+    Layout = "_Layout";
+
+    var roles = ViewBag.Roles as List<string> ?? new List<string>();
+    var selectedRole = ViewBag.UserRole as string ?? "";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-10">
+            <!-- Header with back button -->
+            <div class="d-flex align-items-center mb-4">
+                <a asp-action="ManageUsers" class="btn btn-outline-custom btn-sm me-3">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <h2 class="mb-0">Edit User Profile</h2>
+            </div>
+
+            <!-- Main Card -->
+            <div class="card border-0 shadow-lg rounded-3 overflow-hidden">
+                <!-- Dark Red Header -->
+                <div class="card-header bg-custom text-white py-3">
+                    <h5 class="mb-0 text-center">@Model.FullName</h5>
+                </div>
+
+                <div class="card-body p-4 p-md-5">
+                    <form asp-action="EditUser" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for="Id" />
+
+                        <!-- Personal Info Section -->
+                        <div class="mb-5">
+                            <h5 class="mb-4 pb-2 border-bottom"><i class="fas fa-user-circle me-2 text-custom"></i>Personal Information</h5>
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label asp-for="FullName" class="form-label">Full Name</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-custom text-white"><i class="fas fa-user"></i></span>
+                                        <input asp-for="FullName" class="form-control" placeholder="John Doe" required />
+                                    </div>
+                                    <span asp-validation-for="FullName" class="text-danger small"></span>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label asp-for="Email" class="form-label">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-custom text-white"><i class="fas fa-envelope"></i></span>
+                                        <input asp-for="Email" type="email" class="form-control" placeholder="user@example.com" required />
+                                    </div>
+                                    <span asp-validation-for="Email" class="text-danger small"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role Selection Section -->
+                        <div class="mb-5">
+                            <h5 class="mb-4 pb-2 border-bottom"><i class="fas fa-user-shield me-2 text-custom"></i>Permissions</h5>
+
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label class="form-label">Select Role</label>
+
+                                    @if (roles.Any())
+                                    {
+                                        <div class="d-flex flex-wrap gap-2">
+                                            @foreach (var role in roles)
+                                            {
+                                                <div class="flex-grow-1">
+                                                    <input type="radio"
+                                                           class="btn-check"
+                                                           name="selectedRole"
+                                                           id="role_@role"
+                                                           value="@role"
+                                                           autocomplete="off"
+                                                    @(role == selectedRole ? "checked" : "")>
+                                                    <label class="btn btn-role-outline w-100 py-3" for="role_@role">
+                                                        <i class="fas @(role == "Admin" ? "fa-crown" : role == "Manager" ? "fa-user-tie" : "fa-user") me-2"></i>
+                                                        @role
+                                                    </label>
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="alert alert-warning">No roles available in the system</div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Actions -->
+                        <div class="d-flex justify-content-between pt-3 border-top">
+                            <a asp-action="ManageUsers" class="btn btn-outline-custom px-4">
+                                <i class="fas fa-times me-2"></i>Cancel
+                            </a>
+                            <button type="submit" class="btn btn-custom px-4">
+                                <i class="fas fa-save me-2"></i>Update Profile
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        :root {
+            --custom-red: #880000;
+            --custom-red-light: #a83232;
+            --custom-red-dark: #600000;
+            --custom-red-active: #ff6b6b;
+        }
+
+        .bg-custom {
+            background-color: var(--custom-red) !important;
+            background: linear-gradient(135deg, var(--custom-red-dark) 0%, var(--custom-red) 100%);
+        }
+
+        .text-custom {
+            color: var(--custom-red) !important;
+        }
+
+        .btn-custom {
+            background-color: var(--custom-red);
+            border-color: var(--custom-red-dark);
+            color: white;
+        }
+
+            .btn-custom:hover {
+                background-color: var(--custom-red);
+                border-color: var(--custom-red);
+                color: white;
+            }
+
+        .btn-outline-custom {
+            color: white;
+            border-color: white;
+        }
+
+            .btn-outline-custom:hover {
+                background-color: var(--custom-red);
+                color: white;
+            }
+
+        /* Role Button Styling */
+        .btn-role-outline {
+            color: white;
+            border-color: white;
+            background-color: transparent;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .btn-role-outline:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                color: white;
+                border-color: white !important;
+            }
+
+            .btn-check:checked + .btn-role-outline,
+            .btn-role-outline.active {
+                color: var(--custom-red-active) !important;
+                border-color: var(--custom-red-active) !important;
+                background-color: transparent;
+            }
+
+        .btn-check:focus + .btn-role-outline {
+            box-shadow: 0 0 0 0.25rem rgba(255, 107, 107, 0.25);
+        }
+
+        .input-group-text.bg-custom {
+            background-color: var(--custom-red) !important;
+            border-color: var(--custom-red-dark);
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-color: rgba(136, 0, 0, 0.1);
+        }
+
+        .border-bottom {
+            border-color: white !important;
+        }
+    </style>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function() {
+            // Enhance radio buttons
+            $('.btn-check').change(function() {
+                $('.btn-role-outline').removeClass('active');
+                $(this).next('.btn-role-outline').addClass('active');
+            });
+
+            // Initialize active state
+            $('.btn-check:checked').next('.btn-role-outline').addClass('active');
+
+            // Form change detection
+            const initialFormData = $('form').serialize();
+            $('form').on('change keyup', 'input, select, textarea', function() {
+                const currentFormData = $('form').serialize();
+                $('button[type="submit"]').toggleClass('pulse-animation', initialFormData !== currentFormData);
+            });
+        });
+    </script>
+}

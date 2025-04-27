@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<style>
+
+    .dropdown {
+        position: relative;
+        width: 100%;
+    }
+
+    .reason-toggle {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        text-align: left;
+    }
+
+        .reason-toggle:focus,
+        .reason-toggle:hover,
+        .reason-toggle:active,
+        .reason-toggle.show {
+            box-shadow: none !important;
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+
+    .reason-menu {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        width: 100%;
+        margin-top: 2px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 0;
+        z-index: 1000;
+    }
+
+    .reason-item {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+        .reason-item:hover {
+            background-color: #880000;
+            color: #ffffff;
+        }
+</style>
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card p-4 shadow" style="background-color: #2e2e2e; border-radius: 12px; color: #d4d4d4;">
+                <h2 class="mb-4">Contact Us</h2>
+                <form method="post" asp-action="Contact">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="Name" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="Email" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="reasonDropdown" class="form-label">Reason for Contact</label>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle reason-toggle w-100 text-start" type="button" id="reasonDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Select a reason
+                            </button>
+                            <ul class="dropdown-menu w-100 reason-menu" aria-labelledby="reasonDropdown">
+                                <li><a class="dropdown-item reason-item" href="#" data-value="General">General Question</a></li>
+                                <li><a class="dropdown-item reason-item" href="#" data-value="Support">Support</a></li>
+                                <li><a class="dropdown-item reason-item" href="#" data-value="Feedback">Feedback</a></li>
+                                <li><a class="dropdown-item reason-item" href="#" data-value="Other">Other</a></li>
+                            </ul>
+                            <input type="hidden" name="Type" id="selectedReason" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger" style="background-color: #880000; border-color: #880000;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.reason-item').forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const value = this.getAttribute('data-value');
+            const label = this.textContent.trim();
+            document.getElementById('reasonDropdown').textContent = label;
+            document.getElementById('selectedReason').value = value;
+        });
+    });
+</script>
