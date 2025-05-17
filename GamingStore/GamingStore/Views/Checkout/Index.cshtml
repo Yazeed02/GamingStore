@@ -1,0 +1,199 @@
+﻿@model IEnumerable<CartItem>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<div class="container mt-4 mb-5">
+    <h2 class="text-white mb-4">Checkout</h2>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header">
+                    <h5>Shipping Information</h5>
+                </div>
+                <div class="card-body">
+                    <form id="checkoutForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input type="text" class="form-control" name="address" required>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <label class="form-label">City</label>
+                                <select class="form-select" name="city" required>
+                                    <option value="">Select City</option>
+                                    <option>Amman</option>
+                                    <option>Zarqa</option>
+                                    <option>Irbid</option>
+                                    <option>Aqaba</option>
+                                    <option>Salt</option>
+                                    <option>Madaba</option>
+                                    <option>Karak</option>
+                                    <option>Mafraq</option>
+                                    <option>Tafilah</option>
+                                    <option>Ma'an</option>
+                                    <option>Ajloun</option>
+                                    <option>Jerash</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" maxlength="10" class="form-control" name="phoneNumber" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white">
+                <div class="card-header">
+                    <h5>Payment Method</h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        We only accept <strong>Cash on Delivery</strong> in Jordan
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-dark text-white sticky-top" style="top: 20px;">
+                <div class="card-header">
+                    <h5>Order Summary</h5>
+                </div>
+                <div class="card-body">
+                    @{
+                        var orderItems = Model.Select(item => new
+                        {
+                            Name = item.Product.Name,
+                            Quantity = item.Quantity,
+                            Price = item.Product.IsOnSale && item.Product.DiscountPercentage.HasValue
+                        ? item.Product.Price * (100 - item.Product.DiscountPercentage.Value) / 100
+                        : item.Product.Price,
+                            Total = item.Product.IsOnSale && item.Product.DiscountPercentage.HasValue
+                        ? item.Product.Price * (100 - item.Product.DiscountPercentage.Value) / 100 * item.Quantity
+                        : item.Product.Price * item.Quantity
+                        }).ToList();
+
+                        var subtotal = orderItems.Sum(i => i.Total);
+                        var tax = subtotal * 0.1m;
+                        var deliveryFee = 3.00m; // $3 delivery fee
+                        var total = subtotal + tax + deliveryFee;
+                    }
+
+                    @foreach (var item in orderItems)
+                    {
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>@item.Name (x@(item.Quantity))</span>
+                            <span>@item.Total.ToString("C")</span>
+                        </div>
+                    }
+                    <hr>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal:</span>
+                        <span>@subtotal.ToString("C")</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Tax (10%):</span>
+                        <span>@tax.ToString("C")</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Delivery Fee:</span>
+                        <span>@deliveryFee.ToString("C")</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between fw-bold mb-3">
+                        <span>Total:</span>
+                        <span>@total.ToString("C")</span>
+                    </div>
+                    <button id="placeOrderBtn" class="btn w-100" style="background-color: #880000; color: white;">
+                        Place Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .swal2-confirm {
+        background-color: #880000 !important;
+    }
+
+    .swal2-title {
+        color: #880000 !important;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $("#placeOrderBtn").click(function() {
+                const fullName = $("input[name='fullName']").val().trim();
+                const address = $("input[name='address']").val().trim();
+                const city = $("select[name='city']").val();
+                const phoneNumber = $("input[name='phoneNumber']").val().trim();
+
+                if (!fullName) {
+                    Swal.fire('Error', 'Please enter your full name', 'error');
+                    return;
+                }
+
+                if (address.length < 5) {
+                    Swal.fire('Error', 'Please enter a valid address (at least 5 characters)', 'error');
+                    return;
+                }
+
+                if (!city) {
+                    Swal.fire('Error', 'Please select a city', 'error');
+                    return;
+                }
+
+                if (!phoneNumber.startsWith('07') || phoneNumber.length !== 10 || isNaN(phoneNumber)) {
+                    Swal.fire('Error', 'Please enter a valid Jordanian phone number (07XXXXXXXX)', 'error');
+                    return;
+                }
+
+                Swal.fire({
+                    title: 'Processing your order',
+                    html: 'Please wait...',
+                    allowOutsideClick: false,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+
+                const shippingInfo = {
+                    fullName: fullName,
+                    address: address,
+                    city: city,
+                    phoneNumber: phoneNumber
+                };
+
+                $.post("/Checkout/PlaceOrder", shippingInfo)
+                    .done(function(response) {
+                        if (response.success) {
+                            Swal.fire({
+                                title: 'Success!',
+                                text: 'Your order has been placed',
+                                icon: 'success',
+                                confirmButtonColor: '#880000'
+                            }).then(() => {
+                                window.location.href = "/Order/Confirmation/" + response.orderId;
+                            });
+                        } else {
+                            Swal.fire('Error', response.message, 'error');
+                        }
+                    })
+                    .fail(function() {
+                        Swal.fire('Error', 'An error occurred. Please try again.', 'error');
+                    });
+            });
+        });
+    </script>
+}

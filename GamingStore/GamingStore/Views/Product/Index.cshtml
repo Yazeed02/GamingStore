@@ -1,0 +1,188 @@
+﻿@model IEnumerable<GamingStore.Models.Product>
+@using GamingStore.Models
+@using System.ComponentModel.DataAnnotations
+
+@{
+    ViewData["Title"] = "All Products";
+    var selectedCategory = Context.Request.Query["category"].ToString();
+    var selectedSort = Context.Request.Query["sortOrder"].ToString();
+}
+
+<style>
+    .product-filter-container .dropdown-menu {
+        background-color: #222;
+        border: 1px solid #444;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    .product-filter-container .dropdown-item {
+        color: white;
+        padding: 0.5rem 1rem;
+    }
+
+        .product-filter-container .dropdown-item:hover,
+        .product-filter-container .dropdown-item:focus,
+        .product-filter-container .dropdown-item.active {
+            background-color: #880000 !important;
+            color: white !important;
+        }
+
+    .product-filter-container .dropdown-toggle {
+        background-color: inherit;
+        color: white;
+        border: 1px solid #444;
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
+        min-width: 180px;
+        text-align: center;
+    }
+
+        .product-filter-container .dropdown-toggle:hover {
+            background-color: #880000;
+        }
+
+    .product-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 1px solid #444;
+        background-color: #222;
+        color: white;
+    }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+    .product-image {
+        height: 200px;
+        object-fit: scale-down;
+        background-color: white;
+        border-bottom: 1px solid #444;
+        border-radius: 12px;
+    }
+
+    .bg-custom {
+        color: white;
+        background-color: #28a745;
+    }
+
+    .bg-custom-red {
+        color: white;
+        background-color: #881515;
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="product-filter-container mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h3 class="mb-0">All Products</h3>
+            <div class="btn-group">
+                <div class="dropdown me-2">
+                    <button class="btn filter-btn dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown">
+                        @if (!string.IsNullOrEmpty(selectedCategory))
+                        {
+                            @(((ProductCategory)Enum.Parse(typeof(ProductCategory), selectedCategory)).GetDisplayName())
+                        }
+                        else
+                        {
+                            @:All Categories
+                        }
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item @(string.IsNullOrEmpty(selectedCategory) ? "active" : "")"
+                               href="?sortOrder=@selectedSort">All</a>
+                        </li>
+                        @foreach (var category in Enum.GetValues(typeof(ProductCategory)))
+                        {
+                            <li>
+                                <a class="dropdown-item @(selectedCategory == category.ToString() ? "active" : "")"
+                                   href="?category=@category&sortOrder=@selectedSort">@(((ProductCategory)category).GetDisplayName())</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn filter-btn dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown">
+                        @(selectedSort switch
+                        {
+                            "name" => "Name (A-Z)",
+                            "priceAsc" => "Price ↑",
+                            "priceDesc" => "Price ↓",
+                            "newest" => "Newest",
+                            _ => "Sort By"
+                        })
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item @(string.IsNullOrEmpty(selectedSort) ? "active" : "")"
+                               href="?category=@selectedCategory">Default</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item @(selectedSort == "name" ? "active" : "")"
+                               href="?category=@selectedCategory&sortOrder=name">Name (A-Z)</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item @(selectedSort == "priceAsc" ? "active" : "")"
+                               href="?category=@selectedCategory&sortOrder=priceAsc">Price ↑</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item @(selectedSort == "priceDesc" ? "active" : "")"
+                               href="?category=@selectedCategory&sortOrder=priceDesc">Price ↓</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item @(selectedSort == "newest" ? "active" : "")"
+                               href="?category=@selectedCategory&sortOrder=newest">Newest</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4 col-lg-3 mb-3">
+                <div class="card h-100 bg-dark text-light product-card">
+                    <img src="@((product.Images?.FirstOrDefault()?.ImageUrl ?? "/img/placeholder.png"))" class="card-img-top product-image" alt="@product.Name" />
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text text-muted">@product.Category.GetDisplayName()</p>
+                        <div>
+                            @if (product.IsOnSale && product.DiscountPercentage.HasValue)
+                            {
+                                <div>
+                                    <span class="text-decoration-line-through text-muted me-2">@product.Price.ToString("C")</span>
+                                    <span class="fw-bold text-white">
+                                        @((product.Price * (100 - product.DiscountPercentage.Value) / 100).ToString("C"))
+                                    </span>
+                                </div>
+                                <div class="mt-1">
+                                    <span class="badge me-2 bg-custom">@product.DiscountPercentage% OFF</span>
+                                    <span class="badge @(product.Stock > 0 ? "bg-custom" : "bg-custom-red")">
+                                        @(product.Stock > 0 ? "In Stock" : "Out of Stock")
+                                    </span>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="fw-bold">
+                                    @product.Price.ToString("C")
+                                    <span class="badge @(product.Stock > 0 ? "bg-custom" : "bg-custom-red") mx-2">
+                                        @(product.Stock > 0 ? "In Stock" : "Out of Stock")
+                                    </span>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-outline-light w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

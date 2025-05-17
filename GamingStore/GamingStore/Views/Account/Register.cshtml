@@ -1,0 +1,123 @@
+﻿@model GamingStore.Models.RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="d-flex justify-content-center align-items-center mt-5 mb-5 bg-dark">
+    <div class="card shadow-lg p-4 bg-dark text-light" style="width: 400px;">
+        <div class="card-body">
+            <h3 class="text-center mb-4">Register</h3>
+
+            @if (TempData["AlertMessage"] != null)
+            {
+                <script>
+                    Swal.fire({
+                        title: "@TempData["AlertMessage"]",
+                        icon: "@TempData["AlertType"]",
+                        confirmButtonColor: "#880000",
+                        confirmButtonText: "OK"
+                    });
+                </script>
+            }
+
+            <form method="post" asp-action="Register" id="registerForm">
+                <div class="mb-3">
+                    <label for="FullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control bg-secondary text-light" id="FullName" name="FullName" value="@Model.FullName" required
+                           style="border-color: #404040;" />
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.FullName)</span>
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control bg-secondary text-light" id="Email" name="Email" value="@Model.Email" required
+                           style="border-color: #404040;" />
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.Email)</span>
+                </div>
+                <div class="mb-3">
+                    <label for="Password" class="form-label">Password</label>
+                    <input type="password" class="form-control bg-secondary text-light" id="Password" name="Password"
+                           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$" required
+                           style="border-color: #404040;" />
+                    <small class="text-muted">Must include: uppercase, number, symbol (8+ chars)</small>
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.Password)</span>
+                </div>
+                <div class="mb-3">
+                    <label for="ConfirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control bg-secondary text-light" id="ConfirmPassword" name="ConfirmPassword" required
+                           style="border-color: #404040;" />
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.ConfirmPassword)</span>
+                </div>
+
+                <button type="submit" class="btn w-100" style="background-color: rgba(139, 0, 0, 0.8); color: white; border-color: rgba(139, 0, 0, 0.8);">
+                    Register
+                </button>
+            </form>
+
+            <div class="text-center mt-3">
+                <a href="@Url.Action("Login", "Account")" class="text-decoration-none text-light">Already have an account? Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+        background-color: #404040;
+        border: 1px solid #404040;
+        color: white;
+    }
+
+        .form-control:focus {
+            background-color: #404040;
+            border-color: rgba(139, 0, 0, 0.8);
+            color: white;
+            box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.25);
+        }
+
+    .btn:hover {
+        background-color: rgba(139, 0, 0, 1) !important;
+        border-color: rgba(139, 0, 0, 1) !important;
+    }
+</style>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function() {
+            $.validator.addMethod("passwordPattern", function(value, element) {
+                return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$/.test(value);
+            }, "Password must include uppercase, number, and symbol (8+ characters)");
+
+            $("#registerForm").validate({
+                rules: {
+                    Password: {
+                        required: true,
+                        passwordPattern: true
+                    },
+                    ConfirmPassword: {
+                        equalTo: "#Password"
+                    }
+                },
+                errorElement: "span",
+                errorClass: "text-danger",
+                errorPlacement: function(error, element) {
+                    error.insertAfter(element);
+                },
+                highlight: function(element) {
+                    $(element).addClass("is-invalid").removeClass("is-valid");
+                    $(element).css("border-color", "#dc3545");
+                },
+                unhighlight: function(element) {
+                    $(element).removeClass("is-invalid").addClass("is-valid");
+                    $(element).css("border-color", "#198754");
+                }
+            });
+        });
+    </script>
+}

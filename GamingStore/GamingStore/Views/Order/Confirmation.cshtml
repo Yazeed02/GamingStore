@@ -1,0 +1,197 @@
+﻿@model Order
+
+<div class="confirmation-container">
+    <div class="confirmation-card">
+        <!-- Header Section -->
+        <header class="confirmation-header">
+            <i class="fas fa-check-circle confirmation-icon"></i>
+            <h1 class="confirmation-title">Order Confirmed!</h1>
+            <p class="confirmation-subtitle">Thank you for your order</p>
+        </header>
+
+        <!-- Order Details Section -->
+        <section class="confirmation-details">
+            <div class="order-number">
+                <p>Your order number is: <strong>#@Model.Id</strong></p>
+                <p class="email-note">We've sent a confirmation email with your order details</p>
+            </div>
+
+            <div class="order-summary">
+                <div class="summary-item">
+                    <span class="summary-label">Order Date:</span>
+                    <span class="summary-value">@Model.OrderDate.ToString("f")</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Status:</span>
+                    <span class="summary-value">@Model.Status</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Total:</span>
+                    <span class="summary-value">@Model.OrderDetails.Sum(od => od.Price * od.Quantity).ToString("C")</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Subtotal:</span>
+                    <span class="summary-value">@Model.Subtotal.ToString("C")</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Tax (10%):</span>
+                    <span class="summary-value">@Model.Tax.ToString("C")</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Delivery Fee:</span>
+                    <span class="summary-value">@Model.DeliveryFee.ToString("C")</span>
+                </div>
+                <hr>
+                <div class="summary-item fw-bold">
+                    <span class="summary-label">Total:</span>
+                    <span class="summary-value">@Model.Total.ToString("C")</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Buttons Section -->
+        <section class="confirmation-actions">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-home">
+                <i class="fas fa-home me-2"></i>Go to Home
+            </a>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-continue">
+                <i class="fas fa-shopping-cart me-2"></i>Continue Shopping
+            </a>
+        </section>
+    </div>
+</div>
+
+<style>
+    .confirmation-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        padding: 2rem;
+    }
+
+    .confirmation-card {
+        background-color: #1a1a1a;
+        color: white;
+        border-radius: 12px;
+        padding: 3rem;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .confirmation-header {
+        margin-bottom: 2rem;
+    }
+
+    .confirmation-icon {
+        font-size: 5rem;
+        color: #28a745;
+        margin-bottom: 1.5rem;
+    }
+
+    .confirmation-title {
+        color: #28a745;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .confirmation-subtitle {
+        font-size: 1.25rem;
+        opacity: 0.9;
+    }
+
+    .confirmation-details {
+        background-color: #252525;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .order-number {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #333;
+    }
+
+    .email-note {
+        opacity: 0.8;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+
+    .order-summary {
+        text-align: left;
+    }
+
+    .summary-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+    }
+
+    .summary-label {
+        font-weight: 600;
+        opacity: 0.8;
+    }
+
+    .summary-value {
+        font-weight: 500;
+    }
+
+    .confirmation-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .btn-home {
+        background-color: #333;
+        color: white;
+        border: 1px solid #444;
+    }
+
+        .btn-home:hover {
+            background-color: #444;
+            transform: translateY(-2px);
+        }
+
+    .btn-continue {
+        background-color: #880000;
+        color: white;
+        border: 1px solid #990000;
+    }
+
+        .btn-continue:hover {
+            background-color: #990000;
+            transform: translateY(-2px);
+        }
+
+    @@media (max-width: 576px) {
+        .confirmation-card {
+            padding: 2rem 1.5rem;
+        }
+
+        .confirmation-actions {
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+</style>

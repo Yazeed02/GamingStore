@@ -1,0 +1,191 @@
+﻿@model IEnumerable<Favorite>
+@using System.ComponentModel.DataAnnotations
+@{
+    ViewData["Title"] = "My Favorites";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-white">My Favorites</h2>
+
+    @if (Model.Any())
+    {
+        <div class="row g-4">
+            @foreach (var fav in Model)
+            {
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2-4 mb-3">
+                    <div class="card h-100 bg-dark text-light product-card">
+                        <div class="product-image-container">
+                            <img src="@(fav.Product.Images?.FirstOrDefault()?.ImageUrl ?? "/img/placeholder.png")"
+                                 class="product-image" alt="@fav.Product.Name" />
+                            <form asp-controller="Home" asp-action="ToggleFavorite" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="productId" value="@fav.Product.Id" />
+                                <button type="submit" class="remove-btn">
+                                    &times;
+                                </button>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@fav.Product.Name</h5>
+                            <p class="card-text text-muted">
+                                @{
+                                    var categoryDisplay = fav.Product.Category
+                                    .GetType()
+                                    .GetMember(fav.Product.Category.ToString())[0]
+                                    .GetCustomAttributes(typeof(DisplayAttribute), false)
+                                    .Cast<DisplayAttribute>()
+                                    .FirstOrDefault()?.Name ?? fav.Product.Category.ToString();
+                                }
+                                @categoryDisplay
+                            </p>
+                            <div>
+                                @if (fav.Product.IsOnSale && fav.Product.DiscountPercentage.HasValue)
+                                {
+                                    <div>
+                                        <span class="text-decoration-line-through text-muted me-2">@fav.Product.Price.ToString("C")</span>
+                                        <span class="fw-bold text-white">
+                                            @((fav.Product.Price * (100 - fav.Product.DiscountPercentage.Value) / 100).ToString("C"))
+                                        </span>
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="badge me-2 bg-custom">@fav.Product.DiscountPercentage% OFF</span>
+                                        <span class="badge @(fav.Product.Stock > 0 ? "bg-custom" : "bg-custom-red")">
+                                            @(fav.Product.Stock > 0 ? "In Stock" : "Out of Stock")
+                                        </span>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="fw-bold">
+                                        @fav.Product.Price.ToString("C")
+                                        <span class="badge @(fav.Product.Stock > 0 ? "bg-custom" : "bg-custom-red") mx-2">
+                                            @(fav.Product.Stock > 0 ? "In Stock" : "Out of Stock")
+                                        </span>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="@Url.Action("Details", "Product", new { id = fav.Product.Id })" class="btn btn-outline-light w-100">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5" style="min-height: 50vh;">
+            <h4 class="text-white mb-3">Your favorites list is empty</h4>
+            <p class="text-muted mb-4">Save your favorite products to find them here later</p>
+            <a asp-controller="Product" asp-action="Index" class="btn px-4 py-2" style="background-color: #880000; color: white;">
+                Browse Products
+            </a>
+        </div>
+    }
+</div>
+
+@section Styles {
+    <style>
+        .product-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #444;
+            position: relative;
+        }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            }
+
+        .product-image-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+            border-bottom: 1px solid #444;
+        }
+
+        .remove-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #880000;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.2s;
+        }
+
+            .remove-btn:hover {
+                background-color: #6a0000;
+                transform: scale(1.1);
+            }
+
+        .bg-custom {
+            color: white;
+            background-color: #28a745;
+        }
+
+        .bg-custom-red {
+            color: white;
+            background-color: #881515;
+        }
+
+        @@media (max-width: 992px) {
+            .col-lg-2-4 {
+                width: 50%;
+            }
+
+            .product-image-container {
+                height: 150px;
+            }
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $(".remove-btn").click(function(e) {
+                e.preventDefault();
+                const form = $(this).closest("form");
+                const productCard = form.closest(".col-6");
+
+                $.ajax({
+                    url: form.attr("action"),
+                    type: "POST",
+                    data: form.serialize(),
+                    success: function() {
+                        productCard.fadeOut(300, function() {
+                            $(this).remove();
+                            if ($(".col-6").length === 0) {
+                                location.reload();
+                            }
+                        });
+                    },
+                    error: function() {
+                        alert("Failed to remove. Please try again.");
+                    }
+                });
+            });
+        });
+    </script>
+}

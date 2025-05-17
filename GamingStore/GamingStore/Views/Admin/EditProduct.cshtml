@@ -1,0 +1,302 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h2 class="text-center my-4">Edit Product</h2>
+
+<div class="container mb-5">
+    <div class="card bg-dark text-white shadow-lg border-light">
+        <div class="card-body p-4">
+            <form asp-action="EditProduct" enctype="multipart/form-data" method="post" id="editForm">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" id="featuredImageId" name="featuredImageId" value="@Model.Images?.FirstOrDefault()?.Id" />
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <label asp-for="Name" class="form-label">Product Name *</label>
+                        <input asp-for="Name" class="form-control border-danger-subtle" placeholder="Enter product name" />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Price" class="form-label">Price *</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-secondary text-white">$</span>
+                            <input asp-for="Price" class="form-control" placeholder="0.00" />
+                        </div>
+                        <span asp-validation-for="Price" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label asp-for="Description" class="form-label">Description</label>
+                        <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter product description..."></textarea>
+                        <span asp-validation-for="Description" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Category" class="form-label">Category *</label>
+                        <select asp-for="Category" asp-items="Html.GetEnumSelectList<ProductCategory>()" class="form-select">
+                            <option value="">-- Select Category --</option>
+                        </select>
+                        <span asp-validation-for="Category" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Stock" class="form-label">Stock *</label>
+                        <input asp-for="Stock" class="form-control" placeholder="Available quantity" />
+                        <span asp-validation-for="Stock" class="text-danger small"></span>
+                    </div>
+
+                    <!-- New Images Upload Section -->
+                    <div class="col-md-12">
+                        <label class="form-label">Upload New Images</label>
+                        <input type="file" name="imageFiles" id="imageUpload" class="form-control" multiple accept="image/*" />
+                        <small class="form-text text-light">Select images to upload (will appear below)</small>
+                        <div id="newImagesPreview" class="row mt-3 gx-3 gy-3"></div>
+                    </div>
+
+                    <!-- Existing Images Section -->
+                    <div class="col-md-12">
+                        <label class="form-label">All Product Images</label>
+                        <small class="form-text text-light">Click on any image to set as featured</small>
+                        <div class="row gx-3 gy-3" id="allImagesContainer">
+                            @foreach (var img in Model.Images)
+                            {
+                                <div class="col-md-3 mb-3">
+                                    <div class="image-preview position-relative border rounded shadow-sm p-1 bg-white @(img == Model.Images.First() ? "border-danger" : "")"
+                                         data-id="@img.Id" style="cursor:pointer">
+                                        <img src="@img.ImageUrl" class="img-fluid rounded" style="height: 150px; object-fit: cover;" />
+                                        <span class="badge position-absolute top-0 start-0 m-1 @(img == Model.Images.First() ? "badge-featured" : "bg-secondary")">
+                                            @(img == Model.Images.First() ? "Featured" : "")
+                                        </span>
+                                        <button type="button" class="btn btn-sm btn-danger position-absolute top-0 end-0 m-1 delete-image"
+                                                data-id="@img.Id">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-2">
+                        <div class="form-check form-switch">
+                            <input asp-for="IsFeatured" class="form-check-input" />
+                            <label asp-for="IsFeatured" class="form-check-label">Mark as Featured Product</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-2">
+                        <div class="form-check form-switch">
+                            <input asp-for="IsOnSale" class="form-check-input" id="onSaleSwitch" />
+                            <label asp-for="IsOnSale" class="form-check-label">On Sale</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="DiscountPercentage" class="form-label">Discount (%)</label>
+                        <input asp-for="DiscountPercentage" class="form-control" id="discountInput" placeholder="0-100"
+                               disabled="@(!Model.IsOnSale)" />
+                        <span asp-validation-for="DiscountPercentage" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-end gap-2">
+                    <a asp-action="ManageProducts" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn" style="background-color: #880000; color: white;">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .image-preview {
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+            .image-preview:hover {
+                transform: scale(1.03);
+                border-color: #880000 !important;
+            }
+
+        .badge {
+            font-size: 0.75rem;
+        }
+
+        .border-danger-subtle {
+            border: 1px solid #aa4444 !important;
+        }
+
+        .badge-featured {
+            background-color: #880000 !important;
+        }
+
+        .form-check-input:checked {
+            background-color: #880000;
+            border-color: #880000;
+        }
+
+        .btn {
+            transition: all 0.2s;
+        }
+
+            .btn:hover {
+                opacity: 0.9;
+            }
+    </style>
+}
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+    <script>
+        // Handle new image upload preview
+        const imageUpload = document.getElementById('imageUpload');
+        const newImagesPreview = document.getElementById('newImagesPreview');
+        const allImagesContainer = document.getElementById('allImagesContainer');
+        const featuredImageId = document.getElementById('featuredImageId');
+        let newImageCounter = 0;
+
+        imageUpload.addEventListener('change', function() {
+            newImagesPreview.innerHTML = '';
+            newImageCounter = 0; // Reset counter for new uploads
+
+            Array.from(this.files).forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const tempId = -(newImageCounter + 1); // Use negative IDs for new images
+                    newImageCounter++;
+
+                    const col = document.createElement('div');
+                    col.className = 'col-md-3 mb-3';
+                    col.innerHTML = `
+                        <div class="image-preview position-relative border rounded shadow-sm p-1 bg-white border-secondary"
+                             data-temp-id="${tempId}" style="cursor:pointer">
+                            <img src="${e.target.result}" class="img-fluid rounded" style="height: 150px; object-fit: cover;" />
+                            <span class="badge position-absolute top-0 start-0 m-1 bg-secondary"></span>
+                            <button type="button" class="btn btn-sm btn-danger position-absolute top-0 end-0 m-1 remove-preview-image"
+                                    data-temp-id="${tempId}">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>`;
+                    newImagesPreview.appendChild(col);
+
+                    // Add click handler for new images
+                    col.querySelector('.image-preview').addEventListener('click', function() {
+                        updateFeaturedImageSelection(this, tempId.toString());
+                    });
+                };
+                reader.readAsDataURL(file);
+            });
+        });
+
+        // Handle existing images selection
+        document.querySelectorAll('#allImagesContainer .image-preview').forEach(preview => {
+            preview.addEventListener('click', function() {
+                const imageId = this.getAttribute('data-id');
+                updateFeaturedImageSelection(this, imageId);
+            });
+        });
+
+        // Remove preview image handler
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.remove-preview-image')) {
+                e.preventDefault();
+                e.stopPropagation();
+                const btn = e.target.closest('.remove-preview-image');
+                const tempId = btn.getAttribute('data-temp-id');
+                const preview = btn.closest('.image-preview');
+
+                // Remove from DOM
+                preview.closest('.col-md-3').remove();
+
+                // If this was the featured image, reset selection
+                if (featuredImageId.value === tempId) {
+                    featuredImageId.value = '@Model.Images?.FirstOrDefault()?.Id' || '';
+                    document.querySelectorAll('.image-preview').forEach(el => {
+                        if (el.getAttribute('data-id') === featuredImageId.value) {
+                            el.classList.remove('border-secondary');
+                            el.classList.add('border-danger');
+                            const badge = el.querySelector('.badge');
+                            badge.className = 'badge position-absolute top-0 start-0 m-1 badge-featured';
+                            badge.innerText = 'Featured';
+                        }
+                    });
+                }
+            }
+        });
+
+        // Delete existing image handler
+        document.querySelectorAll('.delete-image').forEach(btn => {
+            btn.addEventListener('click', async function(e) {
+                e.stopPropagation();
+                const imageId = this.getAttribute('data-id');
+
+                if (confirm('Are you sure you want to delete this image?')) {
+                    try {
+                        const response = await fetch('@Url.Action("DeleteProductImage")', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded',
+                                'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                            },
+                            body: `imageId=${imageId}`
+                        });
+
+                        if (response.ok) {
+                            location.reload();
+                        } else {
+                            alert('Error deleting image');
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert('Error deleting image');
+                    }
+                }
+            });
+        });
+
+        // Update featured image selection
+        function updateFeaturedImageSelection(element, imageId) {
+            // Update UI - clear all highlights first
+            document.querySelectorAll('.image-preview').forEach(el => {
+                el.classList.remove('border-danger');
+                const badge = el.querySelector('.badge');
+                if (badge) {
+                    badge.className = 'badge position-absolute top-0 start-0 m-1 bg-secondary';
+                    badge.innerText = '';
+                }
+            });
+
+            // Highlight selected image
+            element.classList.add('border-danger');
+            const badge = element.querySelector('.badge');
+            if (badge) {
+                badge.className = 'badge position-absolute top-0 start-0 m-1 badge-featured';
+                badge.innerText = 'Featured';
+            }
+
+            // Update hidden field - ensure we're passing a number (not string)
+            featuredImageId.value = parseInt(imageId);  // This is the key fix!
+        }
+
+        // Sale toggle
+        const onSaleSwitch = document.getElementById('onSaleSwitch');
+        const discountInput = document.getElementById('discountInput');
+
+        onSaleSwitch.addEventListener('change', function() {
+            discountInput.disabled = !this.checked;
+            if (!this.checked) {
+                discountInput.value = '';
+            }
+        });
+
+        // Initialize discount field state
+        window.addEventListener('DOMContentLoaded', () => {
+            discountInput.disabled = !onSaleSwitch.checked;
+        });
+    </script>
+}

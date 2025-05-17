@@ -1,0 +1,233 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\views\\order\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\views\\order\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\views\\product\\browse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\views\\product\\browse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\gamingstore \uD83D\uDD03\\gamingstore\\views\\admin\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEC7A298-6755-4562-9F0A-6141128A8DA6}|GamingStore\\GamingStore.csproj|solutionrelative:gamingstore\\views\\admin\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "GamingStore\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Account\\Register.cshtml*",
+              "RelativeToolTip": "GamingStore\\Views\\Account\\Register.cshtml*",
+              "ViewState": "AgIAAGAAAAAAAAAAAADwv3sAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T18:14:54.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "GamingStore\\Models\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "GamingStore\\Models\\RegisterModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T18:14:21.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "GamingStore\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "GamingStore\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwHAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T18:13:47.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Order\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "GamingStore\\Views\\Order\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Order\\Confirmation.cshtml",
+              "RelativeToolTip": "GamingStore\\Views\\Order\\Confirmation.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwC8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T15:18:33.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "GamingStore\\Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "GamingStore\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwEoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T15:14:12.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "GamingStore\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Models\\Order.cs",
+              "RelativeToolTip": "GamingStore\\Models\\Order.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwBoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T15:13:35.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "GamingStore\\Views\\Checkout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Checkout\\Index.cshtml",
+              "RelativeToolTip": "GamingStore\\Views\\Checkout\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T15:05:31.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Browse.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Product\\Browse.cshtml",
+              "RelativeDocumentMoniker": "GamingStore\\Views\\Product\\Browse.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Product\\Browse.cshtml",
+              "RelativeToolTip": "GamingStore\\Views\\Product\\Browse.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T14:40:07.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GamingStore\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GamingStore\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAAPQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T14:31:21.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "GamingStore\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "GamingStore\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T14:30:26.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "GamingStore\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Models\\Product.cs",
+              "RelativeToolTip": "GamingStore\\Models\\Product.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwEMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T13:57:54.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "GamingStore\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "GamingStore\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAEwBAAAAAAAAAAAIwE8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T12:41:10.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Admin\\EditProduct.cshtml",
+              "RelativeDocumentMoniker": "GamingStore\\Views\\Admin\\EditProduct.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\GamingStore \uD83D\uDD03\\GamingStore\\Views\\Admin\\EditProduct.cshtml",
+              "RelativeToolTip": "GamingStore\\Views\\Admin\\EditProduct.cshtml",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAkwBsBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T12:33:56.301Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
