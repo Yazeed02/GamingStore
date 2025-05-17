@@ -1,8 +1,8 @@
 GamingStore
 GamingStore is a fully-featured ASP.NET Core MVC web application for browsing and purchasing gaming products. Designed with a modern UI, responsive dark theme, and performance in mind, it offers robust features such as live filtering, product search, discount handling, and advanced stock and order management.
 
-<<<<<<< HEAD
 Features
+
 1.Product Search, Filtering & Sorting
 Live search, category filters, and sort options by price, popularity, or release date.
 
@@ -34,6 +34,7 @@ Fully editable product categories and brand associations.
 Lazy loading, efficient EF Core queries, and optimized SQL interactions.
 
 Tech Stack:
+
 ASP.NET Core MVC
 
 Entity Framework Core
