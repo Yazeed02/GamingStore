@@ -1,0 +1,813 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GamingStore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GamingStore.k5y6ewkkx5.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\01d8f8e4-d411-4597-a79f-428d8a6bd46b.jpg",
+      "PackagePath": "staticwebassets\\img\\01d8f8e4-d411-4597-a79f-428d8a6bd46b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\090fa314-6ddc-4094-bde1-48f68f5fbac5.jpg",
+      "PackagePath": "staticwebassets\\img\\090fa314-6ddc-4094-bde1-48f68f5fbac5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\09ec426e-c5af-4028-91e9-fa6796c15033.jpg",
+      "PackagePath": "staticwebassets\\img\\09ec426e-c5af-4028-91e9-fa6796c15033.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\0a1022b9-8584-42da-b982-58b615c74dc6.jpg",
+      "PackagePath": "staticwebassets\\img\\0a1022b9-8584-42da-b982-58b615c74dc6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\0c9bf8f8-553f-44c7-855d-5d9ffc182793.jpg",
+      "PackagePath": "staticwebassets\\img\\0c9bf8f8-553f-44c7-855d-5d9ffc182793.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\0e4b94cd-245d-4f99-bfed-5124cc39fe4a.jpg",
+      "PackagePath": "staticwebassets\\img\\0e4b94cd-245d-4f99-bfed-5124cc39fe4a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\0f0fdf3f-e904-4a8f-b07b-5981eaf00926.jpg",
+      "PackagePath": "staticwebassets\\img\\0f0fdf3f-e904-4a8f-b07b-5981eaf00926.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\194df6a2-8e27-415b-b90d-676575d7fe5f.jpg",
+      "PackagePath": "staticwebassets\\img\\194df6a2-8e27-415b-b90d-676575d7fe5f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\1a538661-dc32-4782-9607-a5363177e4ce.jpg",
+      "PackagePath": "staticwebassets\\img\\1a538661-dc32-4782-9607-a5363177e4ce.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\1ae54180-6e4c-499f-b124-27a94b2cb315.jpg",
+      "PackagePath": "staticwebassets\\img\\1ae54180-6e4c-499f-b124-27a94b2cb315.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\1b066ae1-2c2b-48f1-9d02-a53df5f745c1.jpg",
+      "PackagePath": "staticwebassets\\img\\1b066ae1-2c2b-48f1-9d02-a53df5f745c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\1b31f9bc-1ce1-4f67-9909-ce7028742d6c.jpg",
+      "PackagePath": "staticwebassets\\img\\1b31f9bc-1ce1-4f67-9909-ce7028742d6c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\1c63aad1-da64-4c50-acbe-679ec110f3d4.jpg",
+      "PackagePath": "staticwebassets\\img\\1c63aad1-da64-4c50-acbe-679ec110f3d4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\1d17ef61-33bc-4b76-863c-9bd1341e3818.jpg",
+      "PackagePath": "staticwebassets\\img\\1d17ef61-33bc-4b76-863c-9bd1341e3818.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\1d1bf6dc-78f1-4942-8a31-f37c5a6f04c0.webp",
+      "PackagePath": "staticwebassets\\img\\1d1bf6dc-78f1-4942-8a31-f37c5a6f04c0.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\2381c382-8b58-45ca-9e07-71b30a57caa6.jpg",
+      "PackagePath": "staticwebassets\\img\\2381c382-8b58-45ca-9e07-71b30a57caa6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\25f1bfba-441a-4f59-8351-3a5fdb9afd06.jpg",
+      "PackagePath": "staticwebassets\\img\\25f1bfba-441a-4f59-8351-3a5fdb9afd06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\2a7724e1-7567-48d1-bf4c-8c0f80356fbb.jpg",
+      "PackagePath": "staticwebassets\\img\\2a7724e1-7567-48d1-bf4c-8c0f80356fbb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\2dddd354-7ffc-4099-b174-9dcb05178ac8.jpg",
+      "PackagePath": "staticwebassets\\img\\2dddd354-7ffc-4099-b174-9dcb05178ac8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\30135e59-a359-4b10-9043-d93a9bd8e47e.jpg",
+      "PackagePath": "staticwebassets\\img\\30135e59-a359-4b10-9043-d93a9bd8e47e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\3105b7e6-5648-4a0c-9589-8b81308758ff.jpg",
+      "PackagePath": "staticwebassets\\img\\3105b7e6-5648-4a0c-9589-8b81308758ff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\31ee0d20-8b42-4e6a-8f29-0c4dd2d70b2b.jpg",
+      "PackagePath": "staticwebassets\\img\\31ee0d20-8b42-4e6a-8f29-0c4dd2d70b2b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\34a5c55a-10b6-421f-a068-807d0881a16b.jpg",
+      "PackagePath": "staticwebassets\\img\\34a5c55a-10b6-421f-a068-807d0881a16b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\3a31c4d1-b890-4455-bdf0-12a4a78bf6a4.jpg",
+      "PackagePath": "staticwebassets\\img\\3a31c4d1-b890-4455-bdf0-12a4a78bf6a4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\3a9ee51d-f277-404b-a4be-612bd6565a22.jpg",
+      "PackagePath": "staticwebassets\\img\\3a9ee51d-f277-404b-a4be-612bd6565a22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\3c84f568-b1b4-47db-9b0e-5699272dfafd.jpg",
+      "PackagePath": "staticwebassets\\img\\3c84f568-b1b4-47db-9b0e-5699272dfafd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\3ca3621f-d030-4da3-8bee-6dbdd2027335.jpg",
+      "PackagePath": "staticwebassets\\img\\3ca3621f-d030-4da3-8bee-6dbdd2027335.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\404e729f-968c-48da-8de8-aa001ecae885.jpg",
+      "PackagePath": "staticwebassets\\img\\404e729f-968c-48da-8de8-aa001ecae885.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\4594c98a-99c4-416c-8479-90087729d60d.jpg",
+      "PackagePath": "staticwebassets\\img\\4594c98a-99c4-416c-8479-90087729d60d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\4d46324f-3ef8-449e-b20a-113540a73ea7.png",
+      "PackagePath": "staticwebassets\\img\\4d46324f-3ef8-449e-b20a-113540a73ea7.png"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\4f63c805-96fc-47fe-9176-49655c54e49f.jpg",
+      "PackagePath": "staticwebassets\\img\\4f63c805-96fc-47fe-9176-49655c54e49f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\50832e2e-0267-44c2-872e-c75cf9581721.jpg",
+      "PackagePath": "staticwebassets\\img\\50832e2e-0267-44c2-872e-c75cf9581721.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\51fe5215-6f2c-4cd8-8058-f3d99210a85d.jpg",
+      "PackagePath": "staticwebassets\\img\\51fe5215-6f2c-4cd8-8058-f3d99210a85d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\5417fba0-3a8c-4069-9f8e-294e9eee2d44.jpeg",
+      "PackagePath": "staticwebassets\\img\\5417fba0-3a8c-4069-9f8e-294e9eee2d44.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\54f0e2c3-0453-4a96-8494-b9098f654e13.jpg",
+      "PackagePath": "staticwebassets\\img\\54f0e2c3-0453-4a96-8494-b9098f654e13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\55e565fc-5401-4cdd-9fab-2aca5b03740d.jpg",
+      "PackagePath": "staticwebassets\\img\\55e565fc-5401-4cdd-9fab-2aca5b03740d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\57f88f14-3886-4972-902a-a7a7a3066d46.jpg",
+      "PackagePath": "staticwebassets\\img\\57f88f14-3886-4972-902a-a7a7a3066d46.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\586242ce-3f76-4456-9d93-c1e89719c3eb.jpg",
+      "PackagePath": "staticwebassets\\img\\586242ce-3f76-4456-9d93-c1e89719c3eb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\59c5963d-64d2-4676-b5c3-bf86c5d289fe.webp",
+      "PackagePath": "staticwebassets\\img\\59c5963d-64d2-4676-b5c3-bf86c5d289fe.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\5a591a26-a4d1-47bb-8abb-e4b398d7c5c1.jpg",
+      "PackagePath": "staticwebassets\\img\\5a591a26-a4d1-47bb-8abb-e4b398d7c5c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\5a9826f4-fcc2-4215-9f94-6c6db893ac3e.jpg",
+      "PackagePath": "staticwebassets\\img\\5a9826f4-fcc2-4215-9f94-6c6db893ac3e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\60dff5fc-6994-4fba-9e3e-8c7601cca167.jpg",
+      "PackagePath": "staticwebassets\\img\\60dff5fc-6994-4fba-9e3e-8c7601cca167.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\6339a8f9-b19d-4cce-8b86-4b5e5845d240.jpg",
+      "PackagePath": "staticwebassets\\img\\6339a8f9-b19d-4cce-8b86-4b5e5845d240.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\637d87bb-7884-420c-b582-e6b1c681f692.jpg",
+      "PackagePath": "staticwebassets\\img\\637d87bb-7884-420c-b582-e6b1c681f692.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\649788c2-ad0c-480b-8475-8476c3d9675d.jpg",
+      "PackagePath": "staticwebassets\\img\\649788c2-ad0c-480b-8475-8476c3d9675d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\649829b2-ebdf-41ae-b693-a3a082b21b63.jpg",
+      "PackagePath": "staticwebassets\\img\\649829b2-ebdf-41ae-b693-a3a082b21b63.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\66ae2011-9979-479f-951d-81c6b26b7bee.jpg",
+      "PackagePath": "staticwebassets\\img\\66ae2011-9979-479f-951d-81c6b26b7bee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\67174b00-436b-492c-b565-3fd910db34c2.jpg",
+      "PackagePath": "staticwebassets\\img\\67174b00-436b-492c-b565-3fd910db34c2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\67434557-f792-4b06-bd1a-452a4f1eedec.jpg",
+      "PackagePath": "staticwebassets\\img\\67434557-f792-4b06-bd1a-452a4f1eedec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\67f829cc-5ce1-4ca3-868b-69f4033cc587.jpg",
+      "PackagePath": "staticwebassets\\img\\67f829cc-5ce1-4ca3-868b-69f4033cc587.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\70a7b5de-4f05-4962-abed-89ec1227a3db.jpg",
+      "PackagePath": "staticwebassets\\img\\70a7b5de-4f05-4962-abed-89ec1227a3db.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\70cf39b5-0778-4081-9213-68aa2d8b2bff.jpg",
+      "PackagePath": "staticwebassets\\img\\70cf39b5-0778-4081-9213-68aa2d8b2bff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\74045d18-6701-4649-b807-0993d4834eb1.jpg",
+      "PackagePath": "staticwebassets\\img\\74045d18-6701-4649-b807-0993d4834eb1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\7487335c-3c23-4a2c-92c8-55c652a91fc8.jpg",
+      "PackagePath": "staticwebassets\\img\\7487335c-3c23-4a2c-92c8-55c652a91fc8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\76c4afd5-8ded-437a-80c3-4bc5f3282779.jpg",
+      "PackagePath": "staticwebassets\\img\\76c4afd5-8ded-437a-80c3-4bc5f3282779.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\78b64102-a3f2-4dab-b83d-22747b2f34ec.jpg",
+      "PackagePath": "staticwebassets\\img\\78b64102-a3f2-4dab-b83d-22747b2f34ec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\79be5a09-f322-4d35-9dc7-2415bcdde8fa.jpg",
+      "PackagePath": "staticwebassets\\img\\79be5a09-f322-4d35-9dc7-2415bcdde8fa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\7d3d5dee-b7d5-4787-a596-89a24f5923b7.jpg",
+      "PackagePath": "staticwebassets\\img\\7d3d5dee-b7d5-4787-a596-89a24f5923b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\7d5a03ea-af22-4c59-86d2-48273146e051.jpg",
+      "PackagePath": "staticwebassets\\img\\7d5a03ea-af22-4c59-86d2-48273146e051.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\7de5993d-8329-466f-b565-fe6732748aaf.jpg",
+      "PackagePath": "staticwebassets\\img\\7de5993d-8329-466f-b565-fe6732748aaf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8230321a-b41b-468f-9d82-c1216a171e0c.jpg",
+      "PackagePath": "staticwebassets\\img\\8230321a-b41b-468f-9d82-c1216a171e0c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\85042496-c496-4025-b466-cc9e6fad24dd.jpg",
+      "PackagePath": "staticwebassets\\img\\85042496-c496-4025-b466-cc9e6fad24dd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\880e1bee-58e7-4fd1-8ca6-5029b2ffd873.jpg",
+      "PackagePath": "staticwebassets\\img\\880e1bee-58e7-4fd1-8ca6-5029b2ffd873.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\88d2c6b8-e190-479f-8ca2-a23e7609babe.jpg",
+      "PackagePath": "staticwebassets\\img\\88d2c6b8-e190-479f-8ca2-a23e7609babe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\894daf89-73d0-4676-a126-9ce11fb1d121.jpg",
+      "PackagePath": "staticwebassets\\img\\894daf89-73d0-4676-a126-9ce11fb1d121.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\897e001a-eccc-4865-8cee-eb4007bc3d3f.webp",
+      "PackagePath": "staticwebassets\\img\\897e001a-eccc-4865-8cee-eb4007bc3d3f.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8be4e3dc-0ddf-4deb-8a62-6f589ae19270.jpg",
+      "PackagePath": "staticwebassets\\img\\8be4e3dc-0ddf-4deb-8a62-6f589ae19270.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8d27cd2c-67bb-444f-a152-dd032c0189f5.webp",
+      "PackagePath": "staticwebassets\\img\\8d27cd2c-67bb-444f-a152-dd032c0189f5.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8d3a39db-912c-44b8-bf34-c55d7564b382.jpg",
+      "PackagePath": "staticwebassets\\img\\8d3a39db-912c-44b8-bf34-c55d7564b382.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8d9c00eb-002c-4cf1-a449-1814de8f1e8a.jpg",
+      "PackagePath": "staticwebassets\\img\\8d9c00eb-002c-4cf1-a449-1814de8f1e8a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8df4caaa-99f3-41af-bb00-e54b0658d461.jpg",
+      "PackagePath": "staticwebassets\\img\\8df4caaa-99f3-41af-bb00-e54b0658d461.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8e024f72-7d8a-4a16-b83b-2b0ec855b3f9.webp",
+      "PackagePath": "staticwebassets\\img\\8e024f72-7d8a-4a16-b83b-2b0ec855b3f9.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8fb2f9e8-55dc-49dd-bdd9-d835d8669001.jpg",
+      "PackagePath": "staticwebassets\\img\\8fb2f9e8-55dc-49dd-bdd9-d835d8669001.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\8ffb99d1-673b-4ba3-84f7-bdfdddd85013.jpg",
+      "PackagePath": "staticwebassets\\img\\8ffb99d1-673b-4ba3-84f7-bdfdddd85013.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\9213abc4-aa30-4ce0-b645-8bd888b1b1fa.jpg",
+      "PackagePath": "staticwebassets\\img\\9213abc4-aa30-4ce0-b645-8bd888b1b1fa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\94df9216-a13c-484e-86c8-1c39d695654d.jpg",
+      "PackagePath": "staticwebassets\\img\\94df9216-a13c-484e-86c8-1c39d695654d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\96959874-3333-474d-9d81-5c9953a37163.jpg",
+      "PackagePath": "staticwebassets\\img\\96959874-3333-474d-9d81-5c9953a37163.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\98d1effb-ab3a-4174-8b08-5bbc9d9af6f4.jpeg",
+      "PackagePath": "staticwebassets\\img\\98d1effb-ab3a-4174-8b08-5bbc9d9af6f4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\9ae5352e-167d-4575-aa5a-0d3b740efab9.jpg",
+      "PackagePath": "staticwebassets\\img\\9ae5352e-167d-4575-aa5a-0d3b740efab9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\9ba4868e-56b2-4655-acf4-5e6d12cb226c.jpg",
+      "PackagePath": "staticwebassets\\img\\9ba4868e-56b2-4655-acf4-5e6d12cb226c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\9d464dd8-b65f-4e8a-92dd-1e24bb8c1b7d.jpg",
+      "PackagePath": "staticwebassets\\img\\9d464dd8-b65f-4e8a-92dd-1e24bb8c1b7d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\9d7b1349-57ad-4017-841d-5e5d526cd078.jpeg",
+      "PackagePath": "staticwebassets\\img\\9d7b1349-57ad-4017-841d-5e5d526cd078.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\9da47f7b-8378-4481-9217-1de4fbb4a4a1.jpg",
+      "PackagePath": "staticwebassets\\img\\9da47f7b-8378-4481-9217-1de4fbb4a4a1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\9edaf50b-1be9-450c-ab8f-e66f4c61108c.jpg",
+      "PackagePath": "staticwebassets\\img\\9edaf50b-1be9-450c-ab8f-e66f4c61108c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\PlaceHolder.png",
+      "PackagePath": "staticwebassets\\img\\PlaceHolder.png"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\a1bbefa4-e966-4c34-b753-3ab5a1ab8cf2.jpg",
+      "PackagePath": "staticwebassets\\img\\a1bbefa4-e966-4c34-b753-3ab5a1ab8cf2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\a2397b0f-731c-49a3-88d8-78eb93298350.jpg",
+      "PackagePath": "staticwebassets\\img\\a2397b0f-731c-49a3-88d8-78eb93298350.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\a510f478-0fdd-4bd5-93e5-f7eb25ea590f.jpg",
+      "PackagePath": "staticwebassets\\img\\a510f478-0fdd-4bd5-93e5-f7eb25ea590f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\a6b2a20d-37d8-4457-a301-ef30c3280f50.jpg",
+      "PackagePath": "staticwebassets\\img\\a6b2a20d-37d8-4457-a301-ef30c3280f50.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ab83593f-6a9b-497b-a005-b662b01269eb.jpg",
+      "PackagePath": "staticwebassets\\img\\ab83593f-6a9b-497b-a005-b662b01269eb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ae3a58df-9324-41de-97f7-ebaf78e1137f.jpg",
+      "PackagePath": "staticwebassets\\img\\ae3a58df-9324-41de-97f7-ebaf78e1137f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\af046c30-2920-456a-8ad7-bffbdc3a4f1a.jpg",
+      "PackagePath": "staticwebassets\\img\\af046c30-2920-456a-8ad7-bffbdc3a4f1a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\af224684-5da2-4ac9-b129-3bcf12c08178.jpg",
+      "PackagePath": "staticwebassets\\img\\af224684-5da2-4ac9-b129-3bcf12c08178.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\b541f108-1e7b-401b-8468-709bfc4d38c0.jpg",
+      "PackagePath": "staticwebassets\\img\\b541f108-1e7b-401b-8468-709bfc4d38c0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\b7527d9e-a1a1-4483-a824-1a967377713b.jpeg",
+      "PackagePath": "staticwebassets\\img\\b7527d9e-a1a1-4483-a824-1a967377713b.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\b85459c0-2cb0-4dc0-982b-aa7bf2da3b20.jpg",
+      "PackagePath": "staticwebassets\\img\\b85459c0-2cb0-4dc0-982b-aa7bf2da3b20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\bc8fd95f-165a-4dd1-a4af-af93fec47c2b.jpg",
+      "PackagePath": "staticwebassets\\img\\bc8fd95f-165a-4dd1-a4af-af93fec47c2b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\bcd47689-1d77-4264-b2b6-520241e45d7a.jpg",
+      "PackagePath": "staticwebassets\\img\\bcd47689-1d77-4264-b2b6-520241e45d7a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\bd1ad77e-8c9e-4afd-a045-63dd0c14c87d.jpg",
+      "PackagePath": "staticwebassets\\img\\bd1ad77e-8c9e-4afd-a045-63dd0c14c87d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\bd7d9784-b405-4d27-960c-bfee6ddebca5.jpg",
+      "PackagePath": "staticwebassets\\img\\bd7d9784-b405-4d27-960c-bfee6ddebca5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\be75a4ba-971d-4837-9139-ae6619c0bfae.jpg",
+      "PackagePath": "staticwebassets\\img\\be75a4ba-971d-4837-9139-ae6619c0bfae.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\bf785b72-94d3-4880-9af4-0ca545137128.jpg",
+      "PackagePath": "staticwebassets\\img\\bf785b72-94d3-4880-9af4-0ca545137128.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\c0aae1b2-a4b0-4d2d-a540-9faf618ce5cf.jpg",
+      "PackagePath": "staticwebassets\\img\\c0aae1b2-a4b0-4d2d-a540-9faf618ce5cf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\c0d44ef3-26ea-493f-aa21-21f19bca75f3.jpg",
+      "PackagePath": "staticwebassets\\img\\c0d44ef3-26ea-493f-aa21-21f19bca75f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\c278a1ab-2231-4b09-bf07-4dd2b101b66f.jpg",
+      "PackagePath": "staticwebassets\\img\\c278a1ab-2231-4b09-bf07-4dd2b101b66f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\c53dbed9-f22c-4880-81af-86dfd7fc09d5.jpeg",
+      "PackagePath": "staticwebassets\\img\\c53dbed9-f22c-4880-81af-86dfd7fc09d5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\c5e3a67a-342c-454a-9962-94a211bf4a52.jpg",
+      "PackagePath": "staticwebassets\\img\\c5e3a67a-342c-454a-9962-94a211bf4a52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\c63a0294-cf85-484d-8976-893c58d0e211.jpg",
+      "PackagePath": "staticwebassets\\img\\c63a0294-cf85-484d-8976-893c58d0e211.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\caa9e5cd-3487-485c-a18a-9f60f37c3300.jpg",
+      "PackagePath": "staticwebassets\\img\\caa9e5cd-3487-485c-a18a-9f60f37c3300.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\cc2448aa-fde4-4ad9-a3b5-2fc8f70837fc.jpg",
+      "PackagePath": "staticwebassets\\img\\cc2448aa-fde4-4ad9-a3b5-2fc8f70837fc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ccc3cb38-defb-4042-925d-c7d6ef6757b6.jpg",
+      "PackagePath": "staticwebassets\\img\\ccc3cb38-defb-4042-925d-c7d6ef6757b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\cdfeba7a-af07-4684-8933-56c98df1b63c.jpg",
+      "PackagePath": "staticwebassets\\img\\cdfeba7a-af07-4684-8933-56c98df1b63c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ce8756a8-0e9d-4e04-96fd-c71d92248ab2.jpg",
+      "PackagePath": "staticwebassets\\img\\ce8756a8-0e9d-4e04-96fd-c71d92248ab2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\d2479284-3010-4023-84f7-33f944d9d8ff.jpg",
+      "PackagePath": "staticwebassets\\img\\d2479284-3010-4023-84f7-33f944d9d8ff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\d27f4d74-6c02-4890-a100-276b221ed9ee.jpg",
+      "PackagePath": "staticwebassets\\img\\d27f4d74-6c02-4890-a100-276b221ed9ee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\d70d8880-d8ae-438d-a2c9-4bcb02b3d81a.jpg",
+      "PackagePath": "staticwebassets\\img\\d70d8880-d8ae-438d-a2c9-4bcb02b3d81a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\d7dda1c8-3e75-46df-bd6f-ce038bef20f4.jpg",
+      "PackagePath": "staticwebassets\\img\\d7dda1c8-3e75-46df-bd6f-ce038bef20f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\dae6d608-f699-4d29-879f-095b8132ba11.jpg",
+      "PackagePath": "staticwebassets\\img\\dae6d608-f699-4d29-879f-095b8132ba11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\dc682e18-d7ee-4ebf-bc19-01351e13ff96.jpg",
+      "PackagePath": "staticwebassets\\img\\dc682e18-d7ee-4ebf-bc19-01351e13ff96.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\e5ead7df-69fc-4a5b-9205-b7d96c8e1a4a.jpg",
+      "PackagePath": "staticwebassets\\img\\e5ead7df-69fc-4a5b-9205-b7d96c8e1a4a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\e8d25519-2366-479e-a93c-ed970df6a46b.jpg",
+      "PackagePath": "staticwebassets\\img\\e8d25519-2366-479e-a93c-ed970df6a46b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ea1a929f-9bc7-4042-a354-f25ba8d5854c.jpg",
+      "PackagePath": "staticwebassets\\img\\ea1a929f-9bc7-4042-a354-f25ba8d5854c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ec1ac72f-0e76-4737-b402-f54c7c7c5181.jpg",
+      "PackagePath": "staticwebassets\\img\\ec1ac72f-0e76-4737-b402-f54c7c7c5181.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ec2374cc-23ae-40a7-8147-d5c00bf4dfb9.jpg",
+      "PackagePath": "staticwebassets\\img\\ec2374cc-23ae-40a7-8147-d5c00bf4dfb9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ef1fc4b2-9c1b-4de7-a737-3f968d20c489.jpg",
+      "PackagePath": "staticwebassets\\img\\ef1fc4b2-9c1b-4de7-a737-3f968d20c489.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\f02425ce-5e8a-4c79-b6dd-4a2be8bf18a0.jpg",
+      "PackagePath": "staticwebassets\\img\\f02425ce-5e8a-4c79-b6dd-4a2be8bf18a0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\f028cce2-d14c-4ba0-adaa-311124fbe27b.jpg",
+      "PackagePath": "staticwebassets\\img\\f028cce2-d14c-4ba0-adaa-311124fbe27b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\f077a2fe-c154-4a6f-b2f3-fb9586e0b62f.webp",
+      "PackagePath": "staticwebassets\\img\\f077a2fe-c154-4a6f-b2f3-fb9586e0b62f.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\f3bf9a17-7ee4-4d3f-807b-2e6f16a63908.jpg",
+      "PackagePath": "staticwebassets\\img\\f3bf9a17-7ee4-4d3f-807b-2e6f16a63908.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\f43a9d9c-9aa2-45b0-91e1-052e4037fea1.webp",
+      "PackagePath": "staticwebassets\\img\\f43a9d9c-9aa2-45b0-91e1-052e4037fea1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\f5a7a029-ce83-4ab2-a5ee-7b5de38b9e1e.jpg",
+      "PackagePath": "staticwebassets\\img\\f5a7a029-ce83-4ab2-a5ee-7b5de38b9e1e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\f632226b-0634-4f89-8da3-2981fa20a3f0.jpg",
+      "PackagePath": "staticwebassets\\img\\f632226b-0634-4f89-8da3-2981fa20a3f0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\fc909a33-1743-4e62-9e41-fff80099eef0.jpg",
+      "PackagePath": "staticwebassets\\img\\fc909a33-1743-4e62-9e41-fff80099eef0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\fda63d4c-ae31-4560-bde4-44c22e3eb18b.webp",
+      "PackagePath": "staticwebassets\\img\\fda63d4c-ae31-4560-bde4-44c22e3eb18b.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\ff8eea72-cb19-4726-8195-bf5612975938.jpg",
+      "PackagePath": "staticwebassets\\img\\ff8eea72-cb19-4726-8195-bf5612975938.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Github\\GamingStore\\GamingStore\\GamingStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GamingStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GamingStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GamingStore.props",
+      "PackagePath": "build\\GamingStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GamingStore.props",
+      "PackagePath": "buildMultiTargeting\\GamingStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GamingStore.props",
+      "PackagePath": "buildTransitive\\GamingStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
